@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>International Trips | A.S. Travels</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7ff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #003399;
+            color: #fff;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .logo-container {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        #icon_img {
+            height: 100px;
+            width: 200px;
+        }
+
+        .header-info {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+            flex: 1;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .header-info p {
+            margin-top: 5px;
+        }
+
+        .navbar {
+            background-color: #003399;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            color: white;
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .places {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .place {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .place img {
+            width: 100%;
+            height: 200px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .place h2 {
+            color: #0066cc;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .place p {
+            color: #470913;
+            font-size: 14px;
+        }
+
+        .place button {
+            background-color: #1eb9be;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            width: 100%;
+            display: block;
+            transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .place button:hover {
+            background-color: #43bddb;
+            transform: scale(1.1);
+            animation: pulse 0.6s infinite;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .place button:active {
+            transform: scale(1);
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .footer {
+            background-color: #003399;
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .marquee {
+            margin: 20px 0;
+            background-color: #a1a8f7;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #fff;
+            overflow: hidden;
+        }
+
+        .marquee-content {
+            display: flex;
+            flex-wrap: nowrap;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .marquee-content p {
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #003399;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="images/AS-Travel-Logo.png" id="icon_img" alt="A.S Travels Logo">
+        </div>
+        <div class="header-info">
+            <h1>A.S. Travels</h1>
+            <p>Explore Beauty with Us!</p>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="first.html">Home</a>
+        <a href="domestic.html">Domestic</a>
+        <a href="international.html">International</a>
+        <a href="aboutus.html">About Us</a>
+    </div>
+
+    <div class="container">
+        <h2 style="text-align: center; font-size: 28px; font-weight: bold;">International Trips</h2>
+        <div class="places">
+            <div class="place thailand">
+                <img src="images/thailand - Copy.jpg" alt="Thailand">
+                <h2>Thailand</h2>
+                <p>3 Days<br>Include food + Medical Facilities<br>Rs 3.80L</p>
+                <button><a href="intForm.html">Book Now</a></button>
+            </div>
+
+            <div class="place singapore">
+                <img src="images/singapore.jpg" alt="Singapore">
+                <h2>Singapore</h2>
+                <p>5 Days<br>Include food + Medical Facilities<br>Rs 7.0L</p>
+                <button><a href="intForm.html">Book Now</a></button>
+            </div>
+
+            <div class="place paris">
+                <img src="images/paris.jpg" alt="Paris">
+                <h2>Paris, France</h2>
+                <p>6 Days<br>Include food + Medical Facilities<br>Rs 8.0L</p>
+                <button><a href="intForm.html">Book Now</a></button>
+            </div>
+
+            <div class="place new york">
+                <img src="images/n york.jpg" alt="New York">
+                <h2>New York City, USA</h2>
+                <p>2 Days<br>Include food + Medical Facilities<br>Rs 4.0L</p>
+                <button><a href="intForm.html">Book Now</a></button>
+            </div>
+
+            <div class="place abu dhabi">
+                <img src="images/abu dhabi.jpg" alt="Abu Dhabi">
+                <h2>Abu Dhabi, UAE</h2>
+                <p>8 Days<br>Include food + Medical Facilities + Hotel rooms<br>Rs 6.2L</p>
+                <button><a href="intForm.html">Book Now</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="marquee">
+            <div class="marquee-content">
+                <p>&copy; 2024 A.S Travels | Privacy Policy | Contact Us: 1800 568 568</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

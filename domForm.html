@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Travel Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        form {
+            width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #cce5ff;
+        }
+
+        h2 {
+            color: #8B0A1A;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        h3 {
+            color: #0343DF;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        input, select {
+            width: 100%;
+            height: 30px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        select {
+            height: 40px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            resize: vertical;
+        }
+
+        button {
+            background-color: #ff9900;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ffa07a;
+        }
+    </style>
+</head>
+<body>
+    <form id="booking-form">
+        <h2>Travel Booking Form</h2>
+
+        <h3>Personal Details</h3>
+
+        <label>Name:</label>
+        <input type="text" id="name" required>
+
+        <label>Gender:</label>
+        <select id="gender" required>
+            <option value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+
+        <label>Age:</label>
+        <input type="number" id="age" required>
+
+        <label>Phone no.:</label>
+        <input type="number" id="phone" required>
+
+        <label>Aadhar Number:</label>
+        <input type="number" id="aadhar" required>
+
+        <label>Father's Name:</label>
+        <input type="text" id="father-name" required>
+
+        <h3>Address and Travel Details</h3>
+
+        <label>Address:</label>
+        <textarea id="address" required></textarea>
+
+        <label>Destination:</label>
+        <select id="destination" required>
+            <option value="">Select Destination</option>
+            <option value="agra">Agra, Uttar Pradesh</option>
+            <option value="mathura">Mathura, Uttar Pradesh</option>
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="uttarakhand">Uttarakhand</option>
+        </select>
+
+        <label>Date of Travel:</label>
+        <input type="date" id="travel-date" required>
+
+        <h3>Payment Details</h3>
+
+        <label>Transaction ID:</label>
+        <input type="text" id="transaction-id" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('booking-form').addEventListener('submit', function(event) {
+            event.preventDefault();  
+            var name = document.getElementById('name').value;
+            var mobile = document.getElementById('phone').value;
+            var transactionId = document.getElementById('transaction-id').value;
+            var address = document.getElementById('address').value;
+            var destination = document.getElementById('destination').value;
+            var travelDate = document.getElementById('travel-date').value;
+
+            window.location.href = "confirmation.html?name=" + encodeURIComponent(name) + 
+                                   "&mobile=" + encodeURIComponent(mobile) + 
+                                   "&transactionId=" + encodeURIComponent(transactionId) +
+                                   "&address=" + encodeURIComponent(address) +
+                                   "&destination=" + encodeURIComponent(destination) +
+                                   "&travelDate=" + encodeURIComponent(travelDate);
+        });
+    </script>
+</body>
+</html>

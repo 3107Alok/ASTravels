@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .confirmation-container {
+            width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #cce5ff;
+        }
+
+        h2 {
+            color: #8B0A1A;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .detail {
+            font-weight: bold;
+        }
+
+        button {
+            background-color: #ff9900;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #ffa07a;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="confirmation-container">
+        <h2>Booking Confirmation</h2>
+        
+        <p>Thank you for your booking!<br>We will notify you via Whatsapp and SMS after Verification! <br> Below are your details:</p>
+        
+        <p><span class="detail">Name:</span> <span id="user-name"></span></p>
+        <p><span class="detail">Mobile Number:</span> <span id="user-mobile"></span></p>
+        <p><span class="detail">Transaction ID:</span> <span id="user-transaction"></span></p>
+        <p><span class="detail">Address:</span> <span id="user-address"></span></p>
+        <p><span class="detail">Destination:</span> <span id="user-destination"></span></p>
+        <p><span class="detail">Date of Journey:</span> <span id="user-travel-date"></span></p>
+        
+        <button><a href="first.html" style="color: #fff; text-decoration: none;">Home</a></button>
+    </div>
+
+    <script>
+        function getQueryParameter(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        document.getElementById('user-name').textContent = getQueryParameter('name');
+        document.getElementById('user-mobile').textContent = getQueryParameter('mobile');
+        document.getElementById('user-transaction').textContent = getQueryParameter('transactionId');
+        document.getElementById('user-address').textContent = getQueryParameter('address');
+        document.getElementById('user-destination').textContent = getQueryParameter('destination');
+        document.getElementById('user-travel-date').textContent = getQueryParameter('travelDate');
+    </script>
+
+</body>
+</html>

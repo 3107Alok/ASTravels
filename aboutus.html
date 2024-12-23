@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - A.S Travels</title>
+
+    <style>
+ 
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff; 
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #003399;
+            color: #fff;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .logo-container {
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        #icon_img {
+            height: 100px;
+            width: 200px;
+        }
+
+        .header-info {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            color: #fff;
+            flex: 1;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .header-info p {
+            margin-top: 5px;
+        }
+
+        .navbar {
+            background-color: #003399;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            color: white;
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .about-us-content {
+            font-size: 18px;
+            color: #3a4352;
+            text-align: center;
+        }
+
+        .about-us-heading {
+            font-size: 32px;
+            font-weight: bold;
+            color: #003399;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .button {
+            background: linear-gradient(45deg, #ff9900, #ff66cc, #ff6699, #ff6600);
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: bold;
+            transition: all 0.5s ease;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 150, 0, 0.8);
+            background: linear-gradient(45deg, #ff6600, #ff99cc, #ff3300, #ff6699);
+        }
+
+        .footer {
+            background-color: #003399;
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .marquee {
+            margin: 20px 0;
+            background-color: #a1a8f7;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #fff;
+            overflow: hidden;
+        }
+
+        .marquee-content {
+            display: flex;
+            flex-wrap: nowrap;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .marquee-content p {
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #003399;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="images/AS-Travel-Logo.png" id="icon_img" alt="A.S Travels Logo">
+        </div>
+
+        <div class="header-info">
+            <h1>A.S. Travels</h1>
+            <p>ExploreBeauty with Us!</p>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="first.html">Home</a>
+        <a href="domestic.html">Domestic</a>
+        <a href="international.html">International</a>
+        <a href="aboutus.html">About Us</a>
+    </div>
+
+    <div class="container">
+        <div class="about-us-content">
+            <h2 class="about-us-heading">About Us</h2>
+            <p>Welcome to A.S. Travels, where we specialize in providing the best travel experiences both domestically and internationally. Our mission is to offer unforgettable journeys to help you explore the beauty of the world. With years of experience and a team of experts, we ensure your travel is comfortable, safe, and enjoyable. Whether you are exploring your own country or venturing abroad, A.S. Travels is here to make your dreams come true.</p>
+            <div class="button-container">
+                <a href="first.html" class="button">Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="marquee">
+            <div class="marquee-content">
+                <p>&copy; 2024 A.S Travels&nbsp;&nbsp; |&nbsp;&nbsp; Privacy Policy&nbsp;&nbsp;|&nbsp;&nbsp; Contact Us : 1800 568 568</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

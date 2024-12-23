@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.S Travels</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6f7ff; 
+            margin: 0;
+            padding: 0;
+        }
+
+       
+        .header {
+    background-color: #003399;
+    color: #fff;
+    padding: 20px 30px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    left: 20px;
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+#icon_img {
+    height: 100px;
+    width: 200px;
+}
+
+.header-info {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    flex: 1;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-info p {
+    margin-top: 5px;
+}
+   .navbar {
+            background-color: #003399;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            margin-top: 10px;
+            width: 100%; 
+        }
+
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            color: white;
+        }
+
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+        }
+
+        .destination {
+            display: flex; 
+            justify-content: space-between; 
+            gap: 20px; 
+        }
+
+        .description {
+            font-size: 18px;
+            color: #3a4352;
+        }
+
+        .domestic, .international {
+            flex: 1; 
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .domestic {
+            background-color: #cce5ff;
+        }
+
+        .international {
+            background-color: #ffcccc;
+        }
+
+        .domestic img, .international img {
+            width: 100%;
+            max-width: 500px; 
+            height: auto; 
+            display: block;
+            margin: 0 auto; 
+        }
+
+        .heading {
+            font-size: 24px;
+            font-weight: bold;
+            color: #01060f;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 40px; 
+        }
+
+        .button {
+            background: linear-gradient(45deg, #ff9900, #ff66cc, #ff6699, #ff6600);
+            color: #fff;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif; 
+            font-weight: bold; 
+            transition: all 0.5s ease;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 15px rgba(255, 150, 0, 0.8);
+            background: linear-gradient(45deg, #ff6600, #ff99cc, #ff3300, #ff6699);
+        }
+
+        .footer {
+            background-color: #003399;
+            color: #fff;
+            padding: 5px; 
+            text-align: center;
+            font-size: 14px; 
+            font-weight: bold;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .marquee {
+            margin: 20px 0;
+            background-color: #a1a8f7;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: #fff;
+            overflow: hidden;
+        }
+
+        .marquee-content {
+            display: flex;
+            flex-wrap: nowrap;
+            animation: marquee 10s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        .marquee-content p {
+            margin: 0 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #003399;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo-container">
+            <img src="images/AS-Travel-Logo.png" id="icon_img" alt="A.S Travels Logo">
+        </div>
+        <div class="header-info">
+            <h1>A.S. Travels</h1>
+            <p>ExploreBeauty with Us!</p>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <a href="first.html">Home</a>
+        <a href="domestic.html">Domestic</a>
+        <a href="international.html">International</a>
+        <a href="aboutus.html">About Us</a>
+    </div>
+
+    <div class="container">
+        <div class="destination">
+            <div class="domestic">
+                <h2>Domestic Trips</h2>
+                <p class="description">Explore India's rich culture and heritage with our domestic trips.</p>
+                <img src="images/domestic-tour-packages-services.jpg" alt="Domestic Trip">
+                <div class="button-container">
+                    <a href="domestic.html" class="button">Explore </a>
+                </div>
+            </div>
+
+            <div class="international">
+                <h2 class="heading">International Trips</h2>
+                <p class="description">Experience the world's wonders with our international trips.</p>
+                <img src="images/intntal.jpg" alt="International Trip">
+                <div class="button-container">
+                    <a href="international.html" class="button">Explore </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="marquee">
+            <div class="marquee-content">
+                <p>&copy; 2024 A.S Travels&nbsp;&nbsp; |&nbsp;&nbsp; Privacy Policy&nbsp;&nbsp;|&nbsp;&nbsp; Contact Us : 1800 568 568</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>  
